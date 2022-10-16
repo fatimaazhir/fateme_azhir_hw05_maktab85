@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-image: url(./images/city.jpg);
+  background-size: cover;
+
+ 
+ 
+}
+
+.img{
+  display: grid;
+  justify-items: center;
+}
+img {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  background-image:linear-gradient(to bottom,rgb(137, 137, 235),rgb(90, 36, 98));
+  color: #ffffff;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+
+.login__form__right {
+  padding: 2rem;
+}
+
+.login__form__right form input
+ {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.6rem;
+  color: #fbf4f4;
+  outline: none;
+  background: transparent;
+}
+.login__form__right form input::placeholder{
+  color: #ffffff;
+}
+
+
+
+.signin-btn {
+  color: rgb(10, 10, 10);
+  background-color: rgb(243, 245, 247);
+  font-family: sans-serif;
+  border-radius: 45%;
+  padding: 10px;
+  border: none;
+}
+
+.btn{
+display: grid;
+justify-content: center;
+margin-top: 50px;
+
+}
+.signin-btn:hover{
+  background-color: #39dc79;
+}
+ a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 100px;
+}
+ a:hover{
+  color: #39dc79;
+}
+label{
+ font-size: 13px;
+ /* grid-area: label; */
+}
+#remember_me{
+  /* grid-area: re; */
+}
+.check{
+  display: grid;
+  grid-template-areas: 're label';
+}
