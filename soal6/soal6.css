@@ -95,9 +95,9 @@ label{
  font-size: 13px;
  /* grid-area: label; */
 }
-#remember_me{
-  /* grid-area: re; */
-}
+/* #remember_me{
+  grid-area: re;
+} */
 .check{
   display: grid;
   grid-template-areas: 're label';
