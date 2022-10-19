@@ -1,21 +1,22 @@
 const walk = {
   walkNumber: 0,
   increase: function () {
-    this.walkNumber = this.walkNumber + 1;
+    this.walkNumber += 1;
+    return this;
   },
-  decrease: function () {
-    this.walkNumber = this.walkNumber - 1;
+  decrease:function () {
+    this.walkNumber -= 1;
+    return this;
   },
-  reset: function () {
+  reset:function() {
     this.walkNumber = 0;
+    return this;
   },
-  read: function () {
+  read:function () {
     console.log(this.walkNumber);
+    return this;
   },
-};
-
-walk.increase();
-walk.increase();
-walk.read();
+}
+walk.increase().decrease().increase().increase().read()
 
 
